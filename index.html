@@ -52,10 +52,10 @@
           </div>
         </div>
         <div class=" hidden  lg:block mt-6">
-          
-        <input type=" text" placeholder="search here" class="rounded-3xl py-2 px-3">
+
+          <input type=" text" placeholder="search here" class="rounded-3xl py-2 px-3">
           <i class="fa-solid fa-magnifying-glass relative -top-8 pl-44"></i>
-          
+
         </div>
       </div>
     </nav>
@@ -114,7 +114,7 @@
         </div>
       </div>
       <!-- fruit item -->
-      <div class="hidden lg:grid grid-cols-5 relative border-2 -mt-20 drop-shadow-lg bg-white w-[80%] p-5">
+      <div class="hidden lg:grid grid-cols-5 relative border-2 -mt-20 ml-10 drop-shadow-lg bg-white w-[80%] p-5">
         <div>
           <img src="images/fruit1.png" alt="">
           <p>Strawberry</p>
@@ -142,7 +142,8 @@
       <div class=" text-center lg:flex items-center mt-32">
         <div class="flex-1 w-[50%] ml-10 mr-24">
           <h3 class="text-3xl font-bold text-justify ">Deal of the day</h3>
-          <p class="font-normal text-justify">Contrary to popular belief, is not simply random text. It has roots in a piece of
+          <p class="font-normal text-justify">Contrary to popular belief, is not simply random text. It has roots in a
+            piece of
             classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div class="mt-10 flex  gap-5">
@@ -196,6 +197,18 @@
               </div>
             </div>
           </div>
+          <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <img class="w-[40%] ml-28" src="images/fruit6.png" alt="">
+    <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">BUY NOW</button>
+    </div>
+  </form>
+</dialog>
         </div>
         <!-- card-2 -->
         <div class="card  bg-base-100 shadow-xl">
@@ -220,6 +233,17 @@
               </div>
             </div>
           </div>
+          <button class="btn" onclick="my_modal_4.showModal()">Details</button>
+<dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <img class="w-[40%] ml-28" src="images/fruit7.png" alt="">
+    <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">BUY NOW</button>
+    </div>
+  </form>
+</dialog>
         </div>
         <!-- card-3 -->
         <div class="card  bg-base-100 shadow-xl">
@@ -244,7 +268,18 @@
               </div>
             </div>
           </div>
-        </div>     
+          <button class="btn" onclick="my_modal_6.showModal()">Details</button>
+          <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <img class="w-[40%] ml-28" src="images/fruit8.png" alt="">
+              <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">BUY NOW</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
         <!-- card-4 -->
         <div class="card  bg-base-100 shadow-xl">
           <figure><img class="pt-10" src="images/fruit9.png" alt="Shoes" /></figure>
@@ -267,156 +302,164 @@
                 <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
               </div>
             </div>
-          </div> 
+          </div>
+          <button class="btn" onclick="my_modal_7.showModal()">Details</button>
+          <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <img class="w-[40%] ml-28" src="images/fruit9.png" alt="">
+              <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
+              <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">BUY NOW</button>
+              </div>
+            </form>
+          </dialog>
         </div>
       </div>
       <div class="justify-center relative mt-10">
-        <button class="  btn btn-error text-white font-bold ml-24 p-4 lg:ml-[480px]">Shop now</button>
-        </div>
+        <button class="  btn btn-error text-white font-bold ml-24 p-4 lg:ml-[480px]">Shop all</button>
+      </div>
     </section>
-  <section class="bg-[url('images/team.png')] bg-cover lg:h-[500px] mt-20">
-    <div class="text-center">
-      <h3 class="text-3xl text-white font-bold pt-20">Meet the team section</h3>
-      <p class="text-white font-normal my-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-    </div>
-    <div class="grid grid-cols-1 ml-32 md:grid-cols-2 lg:grid-cols-4 gap-4 ml-10">
-      <div>
-        <img src="images/member1.png" alt="">
-        <h3 class="text-2xl text-white font-bold">Awlad Hossain</h3>
-        <p class="text-white font-normal mb-3">Fruits Expert</p>
-         <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
+    <section class="bg-[url('images/team.png')] bg-cover lg:h-[500px] mt-20">
+      <div class="text-center">
+        <h3 class="text-3xl text-white font-bold pt-20">Meet the team section</h3>
+        <p class="text-white font-normal my-4">Contrary to popular belief, is not simply random text. It has roots in a
+          piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
-      <div>
-        <img src="images/member2.png" alt="">
-        <h3 class="text-2xl text-white font-bold">Safia Chowdhury</h3>
-        <p class="text-white font-normal mb-3">Fruits Expert</p>
-         <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
+      <div class="grid grid-cols-1 ml-32 md:grid-cols-2 lg:grid-cols-4 gap-4 ml-10">
+        <div>
+          <img src="images/member1.png" alt="">
+          <h3 class="text-2xl text-white font-bold">Awlad Hossain</h3>
+          <p class="text-white font-normal mb-3">Fruits Expert</p>
+          <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
+        </div>
+        <div>
+          <img src="images/member2.png" alt="">
+          <h3 class="text-2xl text-white font-bold">Safia Chowdhury</h3>
+          <p class="text-white font-normal mb-3">Fruits Expert</p>
+          <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
+        </div>
+        <div>
+          <img src="images/member3.png" alt="">
+          <h3 class="text-2xl text-white font-bold">Rokib Hossain</h3>
+          <p class="text-white font-normal mb-3">Fruits Expert</p>
+          <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
+        </div>
+        <div>
+          <img src="images/member4.png" alt="">
+          <h3 class="text-2xl text-white font-bold">Chaity</h3>
+          <p class="text-white font-normal mb-3">Fruits Expert</p>
+          <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
+          <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
+        </div>
       </div>
-      <div>
-        <img src="images/member3.png" alt="">
-        <h3 class="text-2xl text-white font-bold">Rokib Hossain</h3>
-        <p class="text-white font-normal mb-3">Fruits Expert</p>
-         <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>        
-      </div>
-      <div>
-        <img src="images/member4.png" alt="">
-        <h3 class="text-2xl text-white font-bold">Chaity</h3>
-        <p class="text-white font-normal mb-3">Fruits Expert</p>
-         <i class="fa-brands fa-facebook-f text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-twitter text-white text-2xl bg-red-400 rounded-full p-2"></i>
-        <i class="fa-brands fa-linkedin-in text-white text-2xl bg-red-400 rounded-full p-2"></i>
-      </div>
-    </div>
-  </section>
-  <section class="mt-20">
-    <h3 class="text-center text-3xl font-bold">Why Choose Us</h3>
-    <p class="text-center font-normal my-8">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+    </section>
+    <section class="mt-20">
+      <h3 class="text-center text-3xl font-bold">Why Choose Us</h3>
+      <p class="text-center font-normal my-8">Contrary to popular belief, is not simply random text. It has roots in a
+        piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
 
-    <div class=" grid grid-cols-1 md:grid-cols-1 ml-14 lg:grid-cols-3 gap-6">
-      <div>
-      <div class=" lg:flex gap-3">
-        <i class="fa-solid fa-user-group text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
+      <div class=" grid grid-cols-1 md:grid-cols-1 ml-14 lg:grid-cols-3 gap-6">
         <div>
-        <h3 class="text-2xl font-bold">Dedicated Team</h3>
-        <hr class=" lg:w-32">
-        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          <div class=" lg:flex gap-3">
+            <i class="fa-solid fa-user-group text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
+            <div>
+              <h3 class="text-2xl font-bold">Dedicated Team</h3>
+              <hr class=" lg:w-32">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class=" lg:flex gap-3">
+            <i class="fa-solid fa-heart text-4xl bg-slate-200 p-5 rounded-full h-20"></i>
+            <div>
+              <h3 class="text-2xl font-bold">Fresh is Best</h3>
+              <hr class="w-32">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div>
+            <div class=" lg:flex gap-3">
+              <i class="fa-solid fa-user-group text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
+              <div>
+                <h3 class="text-2xl font-bold">Gift Certificates</h3>
+                <hr class="w-32">
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/whychoose1.png" alt="">
+        </div>
+        <div>
+          <div class=" lg:flex gap-4">
+            <div>
+              <h3 class="text-2xl font-bold">Integrated Supplier</h3>
+              <hr class="w-40 ml-16 mt-3">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-apple text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
+            </div>
+          </div>
+          <div class=" lg:flex gap-4">
+            <div>
+              <h3 class="text-2xl font-bold">Sustainable Practice</h3>
+              <hr class="w-40 ml-16 mt-3">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-ice-cream  text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
+            </div>
+          </div>
+          <div class="lg:flex gap-4">
+            <div>
+              <h3 class="text-2xl font-bold">The Benefits Only</h3>
+              <hr class="w-40 ml-16 mt-3">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-thumbs-up text-3xl bg-slate-200 p-5 rounded-full h-20"></i>
+            </div>
+          </div>
         </div>
       </div>
-      <div class=" lg:flex gap-3">
-        <i class="fa-solid fa-heart text-4xl bg-slate-200 p-5 rounded-full h-20"></i>
-        <div>
-        <h3 class="text-2xl font-bold">Fresh is Best</h3>
-        <hr class="w-32">
-        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-        </div>
-      </div>
-      <div>
-      <div class=" lg:flex gap-3">
-        <i class="fa-solid fa-user-group text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
-        <div>
-        <h3 class="text-2xl font-bold">Gift Certificates</h3>
-        <hr class="w-32">
-        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-        </div>
-      </div>
-      </div>
-        </div>
-        <div>
-        <img src="images/whychoose1.png" alt="">
-      </div>
-      <div>
-      <div class=" lg:flex gap-4">
-        <div>
-        <h3 class="text-2xl font-bold">Integrated Supplier</h3>
-        <hr class="w-40 ml-16 mt-3">
-        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-
-        </div>
-        <div>
-        <i class="fa-brands fa-apple text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
-        </div>
-      
-      </div>
-      <div class=" lg:flex gap-4">
-        <div>
-        <h3 class="text-2xl font-bold">Sustainable Practice</h3>
-        <hr class="w-40 ml-16 mt-3">
-        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-ice-cream  text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
-        </div>
-      
-      </div>
-      <div class="lg:flex gap-4">
-        <div>
-        <h3 class="text-2xl font-bold">The Benefits Only</h3>
-        <hr class="w-40 ml-16 mt-3">
-        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-        </div>
-        <div>
-        <i class="fa-solid fa-thumbs-up text-3xl bg-slate-200 p-5 rounded-full h-20"></i>
-        </div>
-      
-      </div>
-      </div>
-    </div>
-  
-  </section>
+    </section>
   </main>
   <footer class="bg-black h-96 ">
-      <div class="flex items-center justify-center mt-10 pt-16">
-        <div>
-        <img src="images/logo.png" alt="">
-        </div>
-        <div class="">
-        <h3 class="text-3xl items-center text-white font-bold">Fruit Burst</h3>
-        </div>
-      </div>
+    <div class="flex items-center justify-center mt-10 pt-16">
       <div>
-        <div class=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mx-10 lg:mx-52 mt-4">
-          <label class="text-white">Home</label>
-          <label class="text-white">About Us</label>
-          <label class="text-white">Shop</label>
-          <label class="text-white">All Fruits</label>
-          <label class="text-white">Support</label>
-          <label class="text-white">My Account</label>
-        </div>
+        <img src="images/logo.png" alt="">
       </div>
-      <div class="text-center mt-10 ">
-        <i class="fa-brands fa-twitter text-3xl text-white mr-4"></i>
-        <i class="fa-brands fa-square-facebook text-3xl text-white mr-4"></i>
-        <i class="fa-brands fa-youtube text-3xl text-white mr-4"></i>
-        <i class="fa-brands fa-linkedin-in text-3xl text-white mr-4"></i>
-        <i class="fa-brands fa-instagram text-3xl text-white mr-4"></i>
-        <i class="fa-brands fa-apple text-3xl text-white mr-4"></i>
+      <div class="">
+        <h3 class="text-3xl items-center text-white font-bold">Fruit Burst</h3>
       </div>
+    </div>
+    <div>
+      <div class=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mx-10 lg:mx-52 mt-4">
+        <label class="text-white">Home</label>
+        <label class="text-white">About Us</label>
+        <label class="text-white">Shop</label>
+        <label class="text-white">All Fruits</label>
+        <label class="text-white">Support</label>
+        <label class="text-white">My Account</label>
+      </div>
+    </div>
+    <div class="text-center mt-10 ">
+      <i class="fa-brands fa-twitter text-3xl text-white mr-4"></i>
+      <i class="fa-brands fa-square-facebook text-3xl text-white mr-4"></i>
+      <i class="fa-brands fa-youtube text-3xl text-white mr-4"></i>
+      <i class="fa-brands fa-linkedin-in text-3xl text-white mr-4"></i>
+      <i class="fa-brands fa-instagram text-3xl text-white mr-4"></i>
+      <i class="fa-brands fa-apple text-3xl text-white mr-4"></i>
+    </div>
   </footer>
 </body>
 
