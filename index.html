@@ -70,8 +70,8 @@
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-          <div class="absolute ml-3  md:ml-32 lg:ml-96 mt-20 text-center">
-            <h3 class=" text-3xl font-bold text-white mb-4 ">Exotic tastes at your<br>doorstep</h3>
+          <div class="absolute ml-16  md:ml-48 lg:ml-96 mt-20 text-center">
+            <h3 class=" text-3xl font-bold text-white mb-4  ">Exotic tastes at your<br>doorstep</h3>
             <p class="text-white font-normal mb-4">We supply highly quality organic products</p>
             <button class="btn border-none bg-[#F85559] text-white font-bold">Shop Now</button>
           </div>
@@ -81,7 +81,7 @@
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
-            <div class="absolute ml-3 -ml-16 md:ml-28 lg:ml-96  text-center -mt-20">
+            <div class="absolute  ml-16 md:ml-48 lg:ml-96  text-center -mt-20">
               <h3 class="text-3xl font-bold text-white mb-4 ">Exotic tastes at your<br>doorstep</h3>
               <p class="text-white font-normal mb-4">We supply highly quality organic products</p>
               <button class="btn border-none bg-[#F85559] text-white font-bold">Shop Now</button>
@@ -93,7 +93,7 @@
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
-            <div class="absolute ml-3 md:ml-32 lg:ml-96  text-center -mt-20">
+            <div class="absolute ml-16 md:ml-48 lg:ml-96  text-center -mt-20">
               <h3 class="text-3xl font-bold text-white mb-4 ">Exotic tastes at your<br>doorstep</h3>
               <p class="text-white font-normal mb-4">We supply highly quality organic products</p>
               <button class="btn border-none bg-[#F85559] text-white font-bold">Shop Now</button>
@@ -105,7 +105,7 @@
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
-            <div class="absolute ml-3  md:ml-28 lg:ml-96  text-center -mt-20">
+            <div class="absolute ml-16  md:ml-48 lg:ml-96  text-center -mt-20">
               <h3 class="text-3xl font-bold text-white mb-4 ">Exotic tastes at your<br>doorstep</h3>
               <p class="text-white font-normal mb-4">We supply highly quality organic products</p>
               <button class="btn border-none bg-[#F85559] text-white font-bold">Shop Now</button>
@@ -139,7 +139,7 @@
     </section>
     <!-- deal of the day -->
     <section>
-      <div class=" text-center lg:flex items-center mt-32">
+      <div class=" ml-14 lg:flex items-center mt-32">
         <div class="flex-1 w-[50%] ml-10 mr-24">
           <h3 class="text-3xl font-bold text-justify ">Deal of the day</h3>
           <p class="font-normal text-justify">Contrary to popular belief, is not simply random text. It has roots in a
@@ -200,12 +200,28 @@
           <!-- Open the modal using ID.showModal() method -->
 <button class="text-xl text-red-400 pb-3" onclick="my_modal_5.showModal()">Details</button>
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <form method="dialog" class="modal-box">
-    <img class="w-[40%] ml-28" src="images/fruit6.png" alt="">
-    <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
-    <div class="modal-action">
+  <form method="dialog" class="modal-box w-80">
+    <img class="w-[30%] ml-20" src="images/fruit6.png" alt="">
+    <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3><hr>
+    <p class="text-center">apple</p>
+    <div class="rating rating-lg rating-half ml-10">
+      <input type="radio" name="rating-10" class="rating-hidden" />
+      <input type="radio" name="rating-9" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+      <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-5" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-4" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-2" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-0" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-11" class="bg-red-400 mask mask-star-2 mask-half-2" />
+    </div>
+
+    <div class="modal-action justify-between">
       <!-- if there is a button in form, it will close the modal -->
-      <button class="btn">BUY NOW</button>
+      <button class="btn bg-[#F85559] text-white">BUY NOW</button>
+      <button class="btn bg-[#F85559] text-white ">cancel</button>
     </div>
   </form>
 </dialog>
@@ -235,12 +251,26 @@
           </div>
           <button class="text-red-400 text-xl pb-3 " onclick="my_modal_4.showModal()">Details</button>
 <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
-  <form method="dialog" class="modal-box">
-    <img class="w-[40%] ml-28" src="images/fruit7.png" alt="">
-    <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
-    <div class="modal-action">
+  <form method="dialog" class="modal-box w-80">
+    <img class="w-[30%] ml-20" src="images/fruit7.png" alt="">
+    <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3><hr><p class="text-center">Orange</p>
+    <div class="rating rating-lg rating-half ml-10">
+      <input type="radio" name="rating-10" class="rating-hidden" />
+      <input type="radio" name="rating-12" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-13" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-14" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+      <input type="radio" name="rating-15" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-16" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-17" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-18" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-19" class="bg-red-400 mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-20" class="bg-red-400 mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-21" class="bg-red-400 mask mask-star-2 mask-half-2" />
+    </div>
+    <div class="modal-action justify-between">
       <!-- if there is a button in form, it will close the modal -->
-      <button class="btn">BUY NOW</button>
+      <button class="btn bg-red-400 text-white">BUY NOW</button>
+      <button class="btn bg-red-400 text-white">CANCEL</button>
     </div>
   </form>
 </dialog>
@@ -253,7 +283,7 @@
             <hr>
             <p class="text-center ">Red Dragon</p>
             <div class="card-actions justify-center">
-              <div class="rating rating-lg rating-half">
+              <div class="rating rating-lg rating-half ">
                 <input type="radio" name="rating-10" class="rating-hidden" />
                 <input type="radio" name="rating-22" class="bg-red-400 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-23" class="bg-red-400 mask mask-star-2 mask-half-2" />
@@ -270,12 +300,27 @@
           </div>
           <button class="text-xl text-red-400 pb-3" onclick="my_modal_6.showModal()">Details</button>
           <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
-            <form method="dialog" class="modal-box">
-              <img class="w-[40%] ml-28" src="images/fruit8.png" alt="">
+            <form method="dialog" class="modal-box w-80">
+              <img class="w-[30%] ml-20" src="images/fruit8.png" alt="">
               <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
-              <div class="modal-action">
+              <hr><p class="text-center">Red Dragon</p>
+              <div class="rating rating-lg rating-half ml-10">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-22" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-23" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-24" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-25" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-26" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-27" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-28" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-29" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-30" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-31" class="bg-red-400 mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="modal-action justify-between">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">BUY NOW</button>
+                <button class="btn bg-red-400">BUY NOW</button>
+                <button class="btn bg-red-400">CANCEL</button>
               </div>
             </form>
           </dialog>
@@ -305,12 +350,29 @@
           </div>
           <button class="text-xl text-red-400 pb-3" onclick="my_modal_7.showModal()">Details</button>
           <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
-            <form method="dialog" class="modal-box">
-              <img class="w-[40%] ml-28" src="images/fruit9.png" alt="">
+            <form method="dialog" class="modal-box lg:w-80">
+              <img class="w-[40%] ml-20" src="images/fruit9.png" alt="">
               <h3 class="text-2xl font-bold text-center mt-5">12.90$ - 18.85$</h3>
-              <div class="modal-action">
+              <hr><P class="text-center">BANANA</P>
+              <div class="rating rating-lg rating-half  ml-10">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+              </div>
+
+              <div class="modal-action justify-center">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">BUY NOW</button>
+                <button class="btn bg-red-400 text-white">BUY NOW</button>
+                <button class="btn bg-red-400 text-white">CANCEL</button>
+
               </div>
             </form>
           </dialog>
@@ -366,10 +428,10 @@
       <p class="text-center font-normal my-8">Contrary to popular belief, is not simply random text. It has roots in a
         piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
 
-      <div class=" grid grid-cols-1 md:grid-cols-1 ml-14 lg:grid-cols-3 gap-6">
+      <div class=" grid grid-cols-1 text-center md:grid-cols-1   lg:grid-cols-3 gap-6">
         <div>
           <div class=" lg:flex gap-3">
-            <i class="fa-solid fa-user-group text-3xl bg-slate-200 p-5 rounded-full h-20 "></i>
+            <i class="fa-solid fa-user-group text-3xl bg-slate-200 p-5 rounded-full h-20  "></i>
             <div>
               <h3 class="text-2xl font-bold">Dedicated Team</h3>
               <hr class=" lg:w-32">
@@ -399,7 +461,7 @@
           <img src="images/whychoose1.png" alt="">
         </div>
         <div>
-          <div class=" lg:flex gap-4">
+          <div class=" lg:flex  gap-4">
             <div>
               <h3 class="text-2xl font-bold">Integrated Supplier</h3>
               <hr class="w-40 ml-16 mt-3">
